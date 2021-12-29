@@ -8,6 +8,7 @@ html {
 $primary-color: #da392b;
 $bg-color: rgb(232, 230, 230);
 $btn-color: rgb(252, 255, 114);
+$sub-color: rgb(39, 36, 67);
 
 * {
   margin: 0;
@@ -27,6 +28,7 @@ ul {
   // font-family: "Montserrat", sans-serif;
   font-family: "Lato", sans-serif;
   background-color: $bg-color;
+  color: $sub-color;
 }
 
 // Nav
