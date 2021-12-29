@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Pushster&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+$primary-color: #da392b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Nav
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  a {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+  .nav--right {
+    a {
+      font-size: 2.4rem;
+      font-family: "Pushster", cursive;
+      color: #fff;
+      background-color: ($primary-color);
+    }
+  }
+
+  .nav--left {
+    border-radius: 0 0 1rem 1rem;
+    margin-right: 6rem;
+    background-color: #fff;
+
+    a {
+      font-size: 2rem;
+      transition: background-color 0.2s ease-in;
+      color: #000;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    a:hover {
+      background-color: ($primary-color);
+      color: #fff;
+    }
+  }
+}
+
+.introduce {
+  height: 90vh;
+  padding-top: 16rem;
+  background-image: url("../img/hd_bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .introduce__content {
+    padding: 2rem 5rem;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 900;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 2rem;
+      padding: 0.4rem 0 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+
+    img {
+      display: block;
+    }
+
+    .introduce__content-download {
+      display: flex;
+      align-items: flex-start;
+      gap: 0 2rem;
+    }
+
+    .introduce__content-download {
+      img {
+        min-height: 45px;
+        width: auto;
+      }
+    }
+  }
+}
+
+// Image tag
+
+.image-tags {
+  width: 100%;
+}
+
+.image-tags__container {
+  display: flex;
+  margin: 0 8rem;
+  justify-content: space-evenly;
+}
+
+.image-tags__items {
+  flex-basis: 22.5%;
+}
+
+.image-tags__items img {
+  width: 100%;
+}
