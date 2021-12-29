@@ -1,0 +1,11 @@
+{
+  "name": "tripo_game-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss/style.scss scss/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
